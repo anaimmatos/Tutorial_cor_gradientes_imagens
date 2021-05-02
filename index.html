@@ -2,21 +2,37 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Cores</title>
+		<title>Gradientes</title>
 		<style>
-			p
+			#grad1
 			{
-				color: red; /* rgba(255,0,0,1) ou #ff0000 ou #f00 ou hsla(0, 100%, 50%, 1) */
-				opacity: 50%;
-				/*mix-blend-mode: screen;*/
+				height: 200px;
+				background-image: linear-gradient(cyan, violet);
 			}
-			body
+			#grad2
 			{
-				background-color: lightgrey;
+				height: 200px;
+				background-image: repeating-linear-gradient(pink, violet 20%);
+			}
+			#grad3
+			{
+				height: 200px;
+				background-image: radial-gradient(yellow, purple);
+			}
+			#grad4
+			{
+				height: 200px;
+				background-image: repeating-radial-gradient(cyan, blue 10%);
 			}
 		</style>
 	</head>
 	<body>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div id="grad1"></div>
+		<br>
+		<div id="grad2"></div>
+		<br>
+		<div id="grad3"></div>
+		<br>
+		<div id="grad4"></div>
 	</body>
 </html>
