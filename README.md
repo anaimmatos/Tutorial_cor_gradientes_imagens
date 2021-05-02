@@ -1,0 +1,1 @@
+# Tutorial_cor_gradientes_imagens
